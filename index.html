@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>张隽宁 (Junning Zhang) - Personal Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', -apple-system, sans-serif; background-color: #f9fafb; color: #1f2937; }
+        .accent-blue { color: #2563eb; }
+        .bg-gradient { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); }
+        .card:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+    </style>
+</head>
+<body>
+
+    <!-- 导航栏 -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
+        <div class="max-w-5xl mx-auto px-4 py-3 flex justify-between items-center">
+            <span class="text-xl font-bold accent-blue">Junning Zhang</span>
+            <div class="space-x-6 text-sm font-medium">
+                <a href="#about" class="hover:accent-blue">关于</a>
+                <a href="#research" class="hover:accent-blue">研究</a>
+                <a href="#news" class="hover:accent-blue">动态</a>
+                <a href="#honors" class="hover:accent-blue">荣誉</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 个人简介区 -->
+    <section id="about" class="max-w-5xl mx-auto px-4 py-12 lg:py-20">
+        <div class="flex flex-col md:flex-row items-center gap-12">
+            <div class="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden shadow-2xl border-4 border-white">
+                <!-- 请替换成你的照片路径 -->
+                <img src="https://via.placeholder.com/400x400?text=Photo" alt="Junning Zhang" class="w-full h-full object-cover">
+            </div>
+            <div class="flex-1 text-center md:text-left">
+                <h1 class="text-4xl font-extrabold mb-2">张隽宁 <span class="text-2xl font-normal text-gray-500 ml-2">Junning Zhang</span></h1>
+                <p class="text-lg mb-4 text-gray-600">
+                    重庆大学 · 自动化学院 · 本科生 <br>
+                    研究兴趣：<span class="font-semibold italic">具身智能, VLA模型, 扩散模型 (Diffusion Policy)</span>
+                </p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-3 mb-6">
+                    <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-semibold">Embodied AI</span>
+                    <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs font-semibold">VLA Models</span>
+                    <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-semibold">Diffusion Models</span>
+                    <span class="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-xs font-semibold">Robotics</span>
+                </div>
+                <div class="flex justify-center md:justify-start space-x-5 text-2xl text-gray-400">
+                    <a href="mailto:your_email@cqu.edu.cn" class="hover:text-blue-600"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/yourusername" class="hover:text-black"><i class="fab fa-github"></i></a>
+                    <a href="#" class="hover:text-blue-400"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="hover:text-red-500"><i class="fas fa-graduation-cap"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 动态 News -->
+    <section id="news" class="bg-white py-12 border-y border-gray-100">
+        <div class="max-w-5xl mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-8 flex items-center"><i class="fas fa-bullhorn mr-3 accent-blue"></i>最新动态</h2>
+            <div class="space-y-4 text-sm leading-relaxed">
+                <div class="flex gap-4">
+                    <span class="text-gray-400 font-mono w-24 flex-shrink-0">2025.04</span>
+                    <p>荣获 2024-2025 学年第一学期重庆大学优秀学生综合奖学金。</p>
+                </div>
+                <div class="flex gap-4">
+                    <span class="text-gray-400 font-mono w-24 flex-shrink-0">2024.09</span>
+                    <p>加入重庆大学机器人与智能系统研究所，由孙一卓老师指导，开始关于 VLA 与扩散模型的研究。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 研究方向 Research -->
+    <section id="research" class="max-w-5xl mx-auto px-4 py-16">
+        <h2 class="text-2xl font-bold mb-10">研究方向</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- 方向1 -->
+            <div class="card bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center text-white mb-4">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3 class="font-bold text-xl mb-2">具身智能与 VLA</h3>
+                <p class="text-gray-600 text-sm">探索视觉-语言-动作 (Vision-Language-Action) 模型在大规模机器人操控中的应用，致力于提升智能体在复杂环境下的泛化能力。</p>
+            </div>
+            <!-- 方向2 -->
+            <div class="card bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                <div class="w-12 h-12 bg-indigo-500 rounded-lg flex items-center justify-center text-white mb-4">
+                    <i class="fas fa-wave-square"></i>
+                </div>
+                <h3 class="font-bold text-xl mb-2">生成式动作策略</h3>
+                <p class="text-gray-600 text-sm">研究基于扩散模型 (Diffusion Models) 的动作预测，解决机器人动作轨迹中的多峰分布与平滑性问题。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 荣誉 Honors -->
+    <section id="honors" class="max-w-5xl mx-auto px-4 py-16 border-t border-gray-100">
+        <h2 class="text-2xl font-bold mb-8">荣誉奖项</h2>
+        <ul class="list-disc list-inside space-y-2 text-gray-600">
+            <li>重庆大学优秀学生综合奖学金 (2024, 2025)</li>
+            <li>“国才杯”英语辩论赛重庆大学选拔赛 成功参赛 (2023)</li>
+            <!-- 添加更多奖项 -->
+        </ul>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-900 text-gray-500 py-10 text-center text-sm">
+        <p>© 2025 Junning Zhang. Built with ❤️ at CQU.</p>
+    </footer>
+
+</body>
+</html>
